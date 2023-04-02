@@ -5,7 +5,7 @@ use Discord\Discord;
 use Discord\Parts\Channel\Message;
 
 $discord = new Discord([
-    'token' => 'MTA5MjE0MjE4NDEwNDQ4MDc3OA.GVTwfA.omHZj0YNYwRB5IbUtLY7eHETjnYhDJURLi74NU', // Замените YOUR_BOT_TOKEN на свой токен авторизации бота
+    'token' => getenv('DISCORD_BOT_TOKEN'), // Замените YOUR_BOT_TOKEN на свой токен авторизации бота
 ]);
 
 $discord->on('ready', function (Discord $discord) {
